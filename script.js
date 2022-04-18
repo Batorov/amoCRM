@@ -45,8 +45,6 @@ function createTasks() {
       let task = {"entity_id":item.id, "entity_type":"contacts", "text":"Контакт без сделок", "complete_till":parseInt(new Date().getTime()/1000) + 604800};
       tasks.push(task);
     });
-
-    console.log(tasks);
     
     $.ajax({
         url: createTasksQueryUrl,
